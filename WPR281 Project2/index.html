@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WPR281 Project</title>
+    <script defer src="validation.js"></script>
+    <!--Cornelius Smith 577637-->
+    <!--Luan Davel 577364-->
+</head>
+<body>
+    <article>
+    </article>
+    <form id="form">
+        <h2 id="fhead">Basic Details</h2>
+        <div class="item">
+            <label for="fName">First Name</label>
+            <input type="text" id="firstname" name="fName" onblur="return fblanklettercheck(this)">
+        </div>
+        <div class="item">
+            <label for="lName">Last Name</label>
+            <input type="text" id="lastname" name="lName" onblur="return lblanklettercheck(this)">
+        </div>
+        <br><br>
+        <div class="item">
+            <label for="emailID">Email ID</label>
+            <input type="text" id="emailid" name="emailID" onblur="return emailcheck(this)">
+        </div>
+        <div class="item">
+            <label for="userID">Your User ID</label>
+            <input type="text" id="userid" name="userID" onblur="return userIdCheck(this)" >
+        </div>
+        <br><br>
+        <div class="item">
+            <label for="country">Country</label>
+            <select name="Country" id="country">
+                <option value="South-Africa">South-Africa</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="Botswana">Botswana</option>
+            </select>
+        </div>
+        <div class="item" id="statediv">
+            <label for="state">State</label>
+            <select name="Sate" id="state">
+                <option value="Gauteng">Gauteng</option>
+                <option value="Northen Cape">Northen Cape</option>
+                <option value="Free State">Free State</option>
+            </select>
+        </div>
+        <div class="item" id="statediv">
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="Pretoria">Pretoria</option>
+                <option value="Johanusburg">Johanusburg</option>
+                <option value="Cape Town">Cape Town</option>
+            </select>
+        </div>
+        <br><br>
+        <div class="item">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" placeholder="Enter #(XXX-XXX-XXXX)" name="phoneNumber" onblur="return phonenumbercheck(this)">
+        </div>
+        <div class="item">
+            <label for="reference"></label>
+            <input type="text" id="reference" name="reference" placeholder="Reference Code">
+        </div>
+        <br>
+        <button type="reset" id="resetbtn">Reset All</button>
+        <button id="continuebtn" onclick="return ContinueBtn()" type="button">Continue</button>
+    </form> 
+    
+    <div class="popup">
+        <span class="popuptext" id="Popup"></span>
+        <h2 id="resultsH"></h2>
+        <p id="PopupSummary"></p>
+    </div>
+</body>
+
+</html>

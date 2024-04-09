@@ -1,0 +1,106 @@
+body{
+    display: flex;
+}
+article{
+    background-color: rgb(0, 157, 255);
+    height: 525px;
+    width: 16%;
+}
+form{
+    margin: auto;
+    margin-top: 0%;
+    margin-right: 0%;
+    width: 85%;
+    height: 525px;
+}
+h2{
+    padding: 10px;
+    color: rgb(0, 157, 255);
+}
+label{
+    color: rgb(161, 160, 160);
+}
+input{
+    border-color: lightgrey;
+    width: 90%;
+    padding: 10px;
+}
+input:hover{
+    border-color: grey;
+}
+input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid  rgb(0, 157, 255);
+}
+#country{
+    border-color: lightgray;
+    border-radius: 20px;
+    width: 80%;
+}
+#country:hover{
+    background-color: grey;
+}
+#state{
+    border-color: lightgray;
+    border-radius: 20px;
+    width: 80%;
+}
+#state:hover{
+    background-color: grey;
+}
+#city{
+    border-color: lightgray;
+    border-radius: 20px;
+    width: 80%;
+}
+#city:hover{
+    background-color: grey;
+}
+select{
+    padding: 10px;
+}
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label:focus{
+    color:  rgb(0, 157, 255);
+}
+#statediv{
+    width: 18.5%;
+}
+.item{
+    width: 47%;
+    padding: 10px;
+    display: inline-block;
+}
+.item label{
+    display: block;
+}
+button{
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+#continuebtn{
+    float: right;
+    margin: 10px;
+    background-color: rgb(0, 157, 255);
+    border: none;
+}
+#continuebtn:hover{
+    border: 2px solid blue;
+}
+#resetbtn{
+    border: none;
+}
+#resetbtn:hover{
+    background-color: grey;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
